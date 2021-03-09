@@ -48,12 +48,6 @@ jobs:
       - name: "Normalize composer.json"
         run: "composer-normalize --dry-run"
 
-      - name: "Check composer.json explicit dependencies"
-        run: "composer-require-checker check"
-
-      - name: "Check composer.json unused dependencies"
-        run: "composer-unused"
-
   tests:
     name: "Tests"
 
