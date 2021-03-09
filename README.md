@@ -1,5 +1,9 @@
 # Base Path Middleware for PHP
 
+[![Latest Stable Version](https://img.shields.io/packagist/v/slam/basepath.svg)](https://packagist.org/packages/slam/basepath)
+[![Downloads](https://img.shields.io/packagist/dt/slam/basepath.svg)](https://packagist.org/packages/slam/basepath)
+[![Integrate](https://github.com/Slamdunk/basepath/workflows/Integrate/badge.svg?branch=master)](https://github.com/Slamdunk/basepath/actions)
+
 This middleware just removes a prefix from the request uri. 
 
 ## Installation
