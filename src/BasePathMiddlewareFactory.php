@@ -2,23 +2,16 @@
 
 namespace LosMiddleware\BasePath;
 
-use Psr\Container\ContainerInterface;
+use LosMiddleware\BasePath\BasePathMiddleware;
 use Mezzio\Helper\UrlHelper;
+use Psr\Container\ContainerInterface;
 
-class BasePathMiddlewareFactory
+final class BasePathMiddlewareFactory
 {
-    /**
-     * Creates the middleware
-     *
-     * @param ContainerInterface $container
-     * @return \LosMiddleware\BasePath\BasePathMiddleware
-     * @throws \Psr\Container\ContainerExceptionInterface
-     * @throws \Psr\Container\NotFoundExceptionInterface
-     */
-    public function __invoke(ContainerInterface $container)
+    public function __invoke(ContainerInterface $container): BasePathMiddleware
     {
         $config = $container->get('config');
-        $path = $config['los_basepath'] ?? '';
+        $path   = $config[BasePathMiddleware::BASE_PATH] ?? '';
 
         $urlHelper = null;
 

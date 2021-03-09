@@ -7,7 +7,7 @@ This middleware just removes a prefix from the request uri.
 This middleware can be installed with composer.
 
 ```bash
-$ composer require los/basepath
+$ composer require slam/basepath
 ```
 
 ## Usage
